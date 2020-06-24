@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar System</title>
+  <meta name="application-name" content="3D Solar System model">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/libs/three.min.js"></script>
+  <script src="js/libs/OrbitControls.js"></script>
+  <script src="js/libs/Detector.js"></script>
+  <script src="js/libs/stats.min.js"></script>
+</head>
+<body>
+  <div id="solar-system"></div>
+
+  <div id="planet-info">
+    <table>
+      <thead>
+        <tr>
+          <th id="name" colspan="3"></th>
+        </tr>
+      </thead>
+    </table>
+    <button type="button" class="btn-close" id="close-planet-panel">Close</button>
+  </div>
+  <div id="info-container">
+    <div class="msg" id="info">
+      <button type="button" class="btn-close" id="close-info">
+    </div>
+    <div class="msg" id="keybindings">
+      <h1>Help</h1>
+      <p><em>Here you can find all the shortcuts to navigate through the project</em></p>
+      <table id="t-keys">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Mean</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SPACE</td>
+            <td>toggle solar system update</td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>reset the viewport</td>
+          </tr>
+          <tr>
+            <th></th>
+        </tbody>
+      </table>
+      <button type="button" class="btn-close" id="close-keys">Close</button>
+    </div>
+  </div>
+  <div id="legend">
+    <span>H - Help</span>
+  </div>
+</body>
+<script src="js/planet.js"></script>
+<script src="js/solarSystem.js"></script>
+<script src="js/main.js"></script>
+<!-- Script to load font -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Sans+Pro::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+</html>
