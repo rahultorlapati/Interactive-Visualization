@@ -1,0 +1,164 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000000 url("../textures/bg_stars.jpg") no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: 'Source Code Pro', sans-serif;
+  color: #fefefe;
+}
+#solar-system {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#planet-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(12, 12, 12, 0.8);
+}
+#planet-info table {
+  padding: 4px;
+}
+#planet-info table th {
+  font-size: 1.8em;
+}
+#planet-info table td {
+  padding: 2px 4px;
+  font-size: 1.1em;
+  vertical-align: bottom;
+}
+#planet-info table td:nth-child(2) {
+  position: relative;
+  right: -2px;
+  text-align: right;
+}
+#name {
+  text-align: center;
+  font-size: 1.5em;
+}
+#close-planet-panel {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.msg {
+  position: relative;
+  width: 50%;
+  background-color: rgba(21, 21, 21, 0.6);
+  text-align: center;
+}
+
+#info {
+  display: none;
+}
+#info h1 {
+  font-size: 2.2em;
+  -webkit-margin-after: 0.2em;
+}
+#info span {
+  position: relative;
+  margin: -2px;
+}
+#info p {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#info p a {
+  color: #334455;
+  text-decoration: underline;
+}
+#info p a strong {
+  transition: all 0.5s;
+}
+#info p a strong:hover {
+  color: #00bb55;
+}
+#info p a:visited {
+  color: #22aaff;
+}
+#author-info {
+  position: relative;
+  height: 2em;
+}
+#author {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  /*margin: 4px;*/
+}
+#university {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  /*right: 16px;*/
+}
+#close-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-close {
+  margin: 12px;
+  background-color: transparent;
+  border: none;
+  color: #999999;
+  cursor: pointer;
+}
+.btn-close:hover {
+  color: #efefef;
+}
+#keybindings {
+  display: none;
+}
+#keybindings h1 {
+  font-size: 2.2em;
+  -webkit-margin-after: 0.2em;
+}
+#keybindings p {
+  position: relative;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#t-keys {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 16px;
+}
+#t-keys td {
+  width: 50%;
+}
+#tr-divider {
+  display: block;
+  margin: 8px 2px 4px;
+}
+#close-keys {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align:  center;
+}
