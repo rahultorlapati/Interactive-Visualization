@@ -1,0 +1,27 @@
+[
+  {
+    "earthMoons" : [
+      {
+        "name"                  : "Moon",
+        "mass"                  : 0.073 ,
+        "ellipticity"           : 0.0012,
+        "density"               : 3340  ,
+        "diameter"              : 3475  ,
+        "gravity"               : 1.6   ,
+        "escapeVelocity"        : 2.4   ,
+        "rotationPeriod"        : 655.7 ,
+        "lengthOfDay"           : 708.7 ,
+        "distanceFromSun"       : 0.384 ,
+        "perihelion"            : 0.363 ,
+        "aphelion"              : 0.406 ,
+        "orbitalPeriod"         : 27.3  ,
+        "orbitalVelocity"       : 1.0   ,
+        "orbitalInclination"    : 5.1   ,
+        "orbitalEccentricity"   : 0.055 ,
+        "obliquityToOrbit"      : 6.7   ,
+        "meanTemperature"       : -20   ,
+        "numberOfMoons"         : 0
+      }
+    ]
+  }
+]
